@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# eCommerce Multimodal UI Generator
 
-## Getting Started
+![Multimodal UI Generator Banner](https://via.placeholder.com/1200x400?text=eCommerce+Multimodal+UI+Generator)
 
-First, run the development server:
+## 🚀 Overview
+
+eCommerce Multimodal UI Generator is a powerful AI-driven platform that revolutionizes how brands create and implement eCommerce interfaces. By using multimodal inputs like product images, brand guidelines, and text prompts, the system generates brand-specific, responsive UI components that maintain design consistency while enabling rapid iteration.
+
+## 🎯 Problem Addressed
+
+Creating brand-aligned landing pages or product showcases is typically time-consuming and design-heavy. eCommerce teams often struggle to:
+
+- Generate visuals that reflect their specific brand tone
+- Adapt designs for different target audiences
+- Showcase product features effectively
+- Iterate quickly on design changes
+- Maintain consistency across different components
+
+## ✨ Key Features
+
+- **Multimodal Input Processing**: Upload product images, brand guidelines (colors/fonts), and provide text prompts
+- **AI-Powered UI Generation**: Transform inputs into brand-specific UI components
+- **Real-time Component Preview**: Select and edit UI components directly in the editor
+- **Brand Consistency**: Maintain visual identity across all generated components
+- **Responsive Design**: Auto-generate layouts that work across all device sizes
+- **Interactive Editing**: User-friendly interface for refining generated components
+- **Code Export**: Instantly export to React components or other compatible formats
+
+## 🔧 Technical Architecture
+
+The application is built with a modern tech stack:
+
+- **Frontend**: Next.js with TypeScript and Tailwind CSS
+- **Component System**: React with dynamic component rendering
+- **State Management**: Zustand for lightweight, efficient state handling
+- **Code Editor**: Monaco editor integration for real-time code editing
+- **Component Synchronization**: Bidirectional sync between visual preview and code
+
+## 💻 Getting Started
+
+### Prerequisites
+
+- Node.js (v14.0 or higher)
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/ecommerce-ui-generator.git
+
+# Navigate to project directory
+cd ecommerce-ui-generator
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🖥️ Usage Guide
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Upload Brand Assets**: Add your brand colors, typography, and product images
+2. **Create Design Brief**: Enter text prompts describing your requirements
+3. **Generate UI Components**: Let AI create various UI options
+4. **Preview and Customize**: Select components and fine-tune directly in the editor
+5. **Export Code**: Generate production-ready React components
 
-## Learn More
+## 🌟 Key Workflows
 
-To learn more about Next.js, take a look at the following resources:
+### Brand Input → UI Generation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Upload brand guidelines and product images
+2. AI analyzes visual elements and brand characteristics
+3. System generates UI components that align with brand identity
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Component Editing
 
-## Deploy on Vercel
+1. Select any component in the preview
+2. Edit properties through the visual interface
+3. Make direct code changes in the editor
+4. See real-time updates in the preview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Code Export
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. After finalizing the design, export components
+2. Choose between React, HTML/CSS, or other formats
+3. Integrate seamlessly with existing eCommerce platforms
+
+## 🔄 Component System
+
+The system includes various components types:
+
+- **Site-wide Components**: Headers, footers, navigation bars
+- **Page-specific Components**: Hero sections, product grids, search interfaces
+- **Product Components**: Product cards, detail views, galleries
+- **Checkout Components**: Cart views, checkout flows, confirmation pages
+
+## 📱 Responsive Design
+
+All generated components are responsive by default, with:
+
+- Flexible grid layouts
+- Adaptive typography
+- Component reorganization for smaller screens
+- Performance optimization for mobile devices
+
+## 🛠️ Future Enhancements
+
+- AI-generated animations for product highlights
+- Platform-specific export (Shopify, WooCommerce, etc.)
+- A/B testing integration
+- Performance analytics
+- Enhanced multimodal input capabilities
+
+## 📃 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+Built with ❤️ for the AI for Visual Design Hackathon
