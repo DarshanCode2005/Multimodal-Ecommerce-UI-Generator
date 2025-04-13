@@ -30,6 +30,31 @@ export const componentToFileMap: Record<string, string> = {
   'Cart Items': 'CartPage',
   'Cart Summary': 'CartPage',
   'Checkout Button': 'CartPage',
+  
+  // Login page components
+  'Login Form': 'LoginPage',
+  'Login Header': 'LoginPage',
+  'Login Tabs': 'LoginPage',
+  'AuthFooter': 'LoginPage',
+  
+  // Dashboard page components
+  'Dashboard Header': 'DashboardPage',
+  'Dashboard Sidebar': 'DashboardPage',
+  'Dashboard Summary': 'DashboardPage',
+  'Recent Orders': 'DashboardPage',
+  
+  // Order confirmation page components
+  'Confirmation Header': 'ConfirmationPage',
+  'Order Summary': 'ConfirmationPage',
+  'Shipping Details': 'ConfirmationPage',
+  'Confirmation Actions': 'ConfirmationPage',
+  
+  // Search page components
+  'SearchHeader': 'SearchPage',
+  'SearchSidebar': 'SearchPage',
+  'SearchControls': 'SearchPage',
+  'SearchResults': 'SearchPage',
+  'SearchPagination': 'SearchPage',
 };
 
 // Map filenames to page types
@@ -37,7 +62,11 @@ export const fileToPageMap: Record<string, string> = {
   'HomePage': 'home',
   'ShopPage': 'shop',
   'ProductPage': 'product',
-  'CartPage': 'cart'
+  'CartPage': 'cart',
+  'LoginPage': 'login',
+  'DashboardPage': 'dashboard',
+  'ConfirmationPage': 'confirmation',
+  'SearchPage': 'search'
 };
 
 // Map page types to filenames
@@ -45,7 +74,11 @@ export const pageToFileMap: Record<string, string> = {
   'home': 'HomePage',
   'shop': 'ShopPage',
   'product': 'ProductPage',
-  'cart': 'CartPage'
+  'cart': 'CartPage',
+  'login': 'LoginPage',
+  'dashboard': 'DashboardPage',
+  'confirmation': 'ConfirmationPage',
+  'search': 'SearchPage'
 };
 
 /**
@@ -78,7 +111,11 @@ export function updateComponentFromPreview(componentType: string, newContent: st
     'product': ['Product Images', 'Product Details', 'Add to Cart Button'],
     'shop': ['Sidebar', 'Product Header', 'Product Card', 'Pagination'],
     'cart': ['Cart Items', 'Cart Summary', 'Checkout Button'],
-    'home': ['Hero Section', 'Product Grid']
+    'home': ['Hero Section', 'Product Grid'],
+    'login': ['Login Form', 'Login Header', 'Login Tabs', 'AuthFooter'],
+    'dashboard': ['Dashboard Header', 'Dashboard Sidebar', 'Dashboard Summary', 'Recent Orders'],
+    'confirmation': ['Confirmation Header', 'Order Summary', 'Shipping Details', 'Confirmation Actions'],
+    'search': ['SearchHeader', 'SearchSidebar', 'SearchControls', 'SearchResults', 'SearchPagination']
   };
   
   // If the component belongs to a specific page, make sure we're updating the right file

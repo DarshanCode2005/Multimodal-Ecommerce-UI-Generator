@@ -263,9 +263,10 @@ export default function SearchPage() {
   // Render an element with potential dynamic content
   const renderElement = (type: string, originalContent: React.ReactNode) => {
     // If this element has modified content, render the JSX string directly
-    if (dynamicContent[type]) {
+    if (dynamicContent[type] || (type === "Pagination" && dynamicContent["SearchPagination"])) {
       // Use our utility to render the JSX string
-      return renderJSXString(dynamicContent[type], originalContent);
+      const content = type === "Pagination" ? dynamicContent["SearchPagination"] : dynamicContent[type];
+      return renderJSXString(content, originalContent);
     }
     // Otherwise render the original content
     return originalContent;
@@ -634,13 +635,13 @@ export default function SearchPage() {
               
               {totalPages > 1 && (
                 <SelectableElement 
-                  elementType="Pagination" 
+                  elementType="SearchPagination" 
                   onSelect={handleElementSelect}
-                  isSelected={selectedElement?.type === 'Pagination'}
+                  isSelected={selectedElement?.type === 'SearchPagination'}
                   className="w-full"
                 >
                   {renderElement("Pagination", (
-                    <div className="mt-6 flex justify-center">
+                    <div className="mt-8 flex justify-center">
                       <div className="flex items-center space-x-1">
                         <button 
                           onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
