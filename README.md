@@ -1,6 +1,34 @@
 # eCommerce Multimodal UI Generator
 
-![Multimodal UI Generator Banner](https://via.placeholder.com/1200x400?text=eCommerce+Multimodal+UI+Generator)
+# Multimodal UI Generator Banner
+
+## Images of the project
+
+![Screenshot 1](./Imagereadme/screen1.png)
+![Screenshot 2](./Imagereadme/screen2.png)
+![Screenshot 3](./Imagereadme/screen3.png)
+![Screenshot 4](./Imagereadme/screen4.png)
+![Screenshot 5](./Imagereadme/screen5.png)
+![Screenshot 6](./Imagereadme/screen6.png)
+![Screenshot 7](./Imagereadme/screen7.png)
+![Screenshot 8](./Imagereadme/screen8.png)
+![Screenshot 9](./Imagereadme/screen9.png)
+![Screenshot 10](./Imagereadme/screen10.png)
+![Screenshot 11](./Imagereadme/screen11.png)
+![Screenshot 12](./Imagereadme/screen12.png)
+![Screenshot 13](./Imagereadme/screen13.png)
+![Screenshot 14](./Imagereadme/screen14.png)
+![Screenshot 15](./Imagereadme/screen15.png)
+![Screenshot 16](./Imagereadme/screen16.png)
+![Screenshot 17](./Imagereadme/screen17.png)
+![Screenshot 18](./Imagereadme/screen18.png)
+![Screenshot 19](./Imagereadme/screen19.png)
+![Screenshot 20](./Imagereadme/screen20.png)
+![Screenshot 21](./Imagereadme/screen21.png)
+![Screenshot 22](./Imagereadme/screen22.png)
+![Screenshot 23](./Imagereadme/screen23.png)
+![Screenshot 24](./Imagereadme/screen24.png)
+![Screenshot 25](./Imagereadme/screen25.png)
 
 ## 🚀 Overview
 
