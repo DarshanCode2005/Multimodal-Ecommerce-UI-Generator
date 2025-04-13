@@ -8,13 +8,11 @@ type PreviewPaneProps = {
 };
 
 export default function PreviewPane({ expanded }: PreviewPaneProps) {
-  const [viewportSize, setViewportSize] = useState<'desktop' | 'tablet' | 'mobile'>('desktop');
+  const [viewportSize, setViewportSize] = useState<'desktop' | 'tablet'>('desktop');
   const [showHelp, setShowHelp] = useState(true);
   
   const getViewportClass = () => {
     switch (viewportSize) {
-      case 'mobile':
-        return 'max-w-[375px]';
       case 'tablet':
         return 'max-w-[768px]';
       default:
@@ -26,12 +24,6 @@ export default function PreviewPane({ expanded }: PreviewPaneProps) {
     <div className={`flex-1 h-full flex flex-col overflow-hidden`}>
       <div className="flex items-center justify-between bg-gray-800 text-white p-2 border-b border-gray-700">
         <div className="flex space-x-2">
-          <button
-            onClick={() => setViewportSize('mobile')}
-            className={`px-3 py-1 rounded text-sm ${viewportSize === 'mobile' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'}`}
-          >
-            Mobile
-          </button>
           <button
             onClick={() => setViewportSize('tablet')}
             className={`px-3 py-1 rounded text-sm ${viewportSize === 'tablet' ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'}`}

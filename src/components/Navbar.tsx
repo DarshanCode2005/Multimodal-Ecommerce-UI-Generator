@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useEditorStore } from '../store/editorStore';
+import { usePageStore } from '../store/pageStore';
 
 type NavbarProps = {
   onToggleLeftPane: () => void;
@@ -17,6 +18,7 @@ export default function Navbar({
   isRightPaneVisible 
 }: NavbarProps) {
   const { useMultimodalInput, toggleMultimodalInput } = useEditorStore();
+  const { setActivePage } = usePageStore();
 
   return (
     <nav className="flex items-center justify-between bg-gray-900 text-white p-4 h-16">

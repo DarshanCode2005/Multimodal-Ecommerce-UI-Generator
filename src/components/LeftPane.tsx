@@ -24,6 +24,8 @@ export default function LeftPane({ isVisible }: LeftPaneProps) {
     { id: 'cart', name: 'Cart', path: '/cart', icon: '🛍️' },
     { id: 'login', name: 'Login', path: '/login', icon: '🔑' },
     { id: 'dashboard', name: 'Dashboard', path: '/dashboard', icon: '👤' },
+    { id: 'confirmation', name: 'Order Confirmation', path: '/confirmation', icon: '✅' },
+    { id: 'search', name: 'Search Results', path: '/search', icon: '🔍' },
   ]);
 
   return (

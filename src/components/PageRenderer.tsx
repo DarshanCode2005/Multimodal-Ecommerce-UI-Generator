@@ -7,6 +7,8 @@ import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
+import ConfirmationPage from './pages/ConfirmationPage';
+import SearchPage from './pages/SearchPage';
 import AIInputModal from './AIInputModal';
 import AIMultimodalInputModal from './AIMultimodalInputModal';
 import { useEditorStore } from '../store/editorStore';
@@ -33,6 +35,10 @@ export default function PageRenderer({ expanded }: PageRendererProps) {
         return <LoginPage />;
       case 'dashboard':
         return <DashboardPage />;
+      case 'confirmation':
+        return <ConfirmationPage />;
+      case 'search':
+        return <SearchPage />;
       default:
         return <HomePage />;
     }
