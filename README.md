@@ -126,4 +126,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-Built with ❤️ for the AI for Visual Design Hackathon
+Built with ❤️ for the Synapses Hackathon hosted by VLG
