@@ -6,6 +6,8 @@ import { useFileStore, FileType } from '../store/fileStore';
 import { updatePreviewFromEditor, openComponentFile } from '../services/componentSyncService';
 import ElementCodeEditor from './ElementCodeEditor';
 import FileCodeEditor from './FileCodeEditor';
+import LoginCodeEditor from './LoginCodeEditor';
+import { usePageStore } from '../store/pageStore';
 
 export interface RightPaneProps {
   isVisible: boolean;
@@ -15,6 +17,7 @@ export default function RightPane({ isVisible }: RightPaneProps) {
   const [activeTab, setActiveTab] = useState<'explorer' | 'element'>('explorer');
   const selectedElement = useEditorStore((state) => state.selectedElement);
   const { files, activeFileId, setActiveFile, updateFileContent, getFileById } = useFileStore();
+  const { activePage } = usePageStore();
   const [openFolders, setOpenFolders] = useState<Record<string, boolean>>({
     'src': true,
     'components': true,
@@ -113,7 +116,11 @@ export default function RightPane({ isVisible }: RightPaneProps) {
             </div>
             
             <div className="w-2/3 h-full flex flex-col">
-              <FileCodeEditor />
+              {activePage === 'login' ? (
+                <LoginCodeEditor />
+              ) : (
+                <FileCodeEditor />
+              )}
             </div>
           </div>
         ) : (

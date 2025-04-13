@@ -34,7 +34,7 @@ export default function Navbar({
             )}
           </svg>
         </button>
-        <div className="text-xl font-bold">Website Builder</div>
+        <div className="text-xl font-bold">Multimodal Ecommerce Builder</div>
       </div>
       
       <div className="flex items-center space-x-4">

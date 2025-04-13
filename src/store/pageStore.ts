@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export type PageType = 'home' | 'shop' | 'product' | 'cart';
+export type PageType = 'home' | 'shop' | 'product' | 'cart' | 'login' | 'dashboard';
 
 interface PageState {
   activePage: PageType;
